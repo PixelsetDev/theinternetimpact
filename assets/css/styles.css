@@ -550,12 +550,20 @@ video {
   margin-top: 1rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .hidden {
   display: none;
 }
 
 .w-full {
   width: 100%;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .-translate-y-24 {
@@ -688,22 +696,17 @@ h3 {
   }
 }
 
-.text-small {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 @media (min-width: 768px) {
   .text-small {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width: 1024px) {
   .text-small {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -715,43 +718,6 @@ h3 {
 
 p {
   margin-top: 1rem;
-}
-
-/* NAVIGATION BAR */
-
-.navbar {
-  position: fixed;
-  top: 0px;
-  z-index: 30;
-  display: flex;
-  width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.navbar-logo-container {
-  flex-grow: 1;
-}
-
-.navbar-logo {
-  margin-top: 0.25rem;
-  height: 1rem;
-}
-
-@media (min-width: 768px) {
-  .navbar-logo {
-    height: 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .navbar-logo {
-    height: 2rem;
-  }
 }
 
 /* HEADER */
@@ -846,6 +812,57 @@ main {
   main {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* NAV */
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  z-index: 30;
+  display: flex;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.navbar-logo-container {
+  flex-grow: 1;
+}
+
+.navbar-logo {
+  margin-top: 0.25rem;
+  height: 1rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-logo {
+    height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-logo {
+    height: 2rem;
   }
 }
 

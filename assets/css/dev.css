@@ -21,16 +21,11 @@ p, span, a, div, i, b, em, strong, .light { font-family: 'gilroylight', sans-ser
 /* HEADINGS */
 h2 { @apply text-4xl md:text-5xl lg:text-6xl; }
 h3 { @apply text-xl md:text-2xl lg:text-3xl; }
-.text-small { @apply text-lg md:text-xl lg:text-2xl; }
+.text-small { @apply md:text-lg lg:text-xl; }
 
 /* SPACING */
 .hm { @apply mt-16; }
 p { @apply mt-4; }
-
-/* NAVIGATION BAR */
-.navbar { @apply bg-neutral-900 py-2 px-16 w-full fixed top-0 z-30 flex; }
-.navbar-logo-container { @apply flex-grow; }
-.navbar-logo { @apply h-4 md:h-6 lg:h-8 mt-1; }
 
 /* HEADER */
 .header-full { @apply h-screen overflow-hidden absolute relative top-0 bg-center bg-cover bg-no-repeat; }
@@ -40,6 +35,14 @@ p { @apply mt-4; }
 
 /* MAIN */
 main { @apply px-8 md:px-16 lg:px-32 py-32 mx-auto; }
+
+/* FOOTER */
+footer { @apply bg-neutral-900 py-2 px-16 w-full text-white; }
+
+/* NAV */
+.navbar { @apply bg-neutral-900 py-2 px-16 w-full fixed top-0 z-30 flex; }
+.navbar-logo-container { @apply flex-grow; }
+.navbar-logo { @apply h-4 md:h-6 lg:h-8 mt-1; }
 
 /* ALERTS */
 .alert { @apply my-16 py-4 px-6 text-xl md:text-2xl lg:text-3xl; }
