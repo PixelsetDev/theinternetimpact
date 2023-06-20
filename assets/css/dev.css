@@ -4,7 +4,7 @@
 
 /* FONTS */
 h1, h2, h3, h4, h5, h6, .extrabold { font-family: 'gilroyextrabold', sans-serif; }
-p, span, div, i, b, em, strong, .light { font-family: 'gilroylight', sans-serif; @apply text-xl md:text-2xl lg:text-3xl; }
+p, div, .light { font-family: 'gilroylight', sans-serif; @apply text-xl md:text-2xl lg:text-3xl; }
 a { font-family: 'gilroylight', sans-serif; }
 
 @font-face {

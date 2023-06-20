@@ -626,21 +626,21 @@ h1, h2, h3, h4, h5, h6, .extrabold {
   font-family: 'gilroyextrabold', sans-serif;
 }
 
-p, span, div, i, b, em, strong, .light {
+p, div, .light {
   font-family: 'gilroylight', sans-serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
 @media (min-width: 768px) {
-  p, span, div, i, b, em, strong, .light {
+  p, div, .light {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
 @media (min-width: 1024px) {
-  p, span, div, i, b, em, strong, .light {
+  p, div, .light {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
