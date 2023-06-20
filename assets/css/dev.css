@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* FONTS */
-h1, h2, h3, h4, h5, h6, .extrabold { font-family: 'gilroyextrabold', sans-serif; @apply extrabold; }
+h1, h2, h3, h4, h5, h6, .extrabold { font-family: 'gilroyextrabold', sans-serif; }
 p, span, a, div, i, b, em, strong, .light { font-family: 'gilroylight', sans-serif; @apply text-xl md:text-2xl lg:text-3xl; }
 
 @font-face {
@@ -29,7 +29,7 @@ h3 { @apply text-xl md:text-2xl lg:text-3xl; }
 .navbar-logo { @apply h-4 md:h-6 lg:h-8 mt-1; }
 
 /* HEADER */
-.header-full { @apply h-screen overflow-hidden absolute relative top-0 bg-center bg-cover bg-norepeat; }
+.header-full { @apply h-screen overflow-hidden absolute relative top-0 bg-center bg-cover bg-no-repeat; }
 
 /* MAIN */
 .main-container { @apply px-8 md:px-16 lg:px-32 py-32 mx-auto; }
