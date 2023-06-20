@@ -19,59 +19,59 @@
         <title>Environment - The Internet Impact</title>
     </head>
     <body>
-        <nav class="bg-neutral-900 py-2 px-16 w-full fixed top-0 z-30 flex">
-            <div class="flex-grow">
-                <img src="/assets/images/nav-logo.webp" alt="The Internet Impact Logo" class="h-4 md:h-6 lg:h-8 mt-1">
+        <nav class="navbar">
+            <div class="navbar-logo-container">
+                <img src="/assets/images/nav-logo.webp" alt="The Internet Impact Logo" class="navbar-logo">
             </div>
-            <a href="/" class="bg-neutral-800 text-white hover:bg-neutral-700 transform duration-200 px-2 py-1 rounded-lg self-center text-xs md:text-lg">Home</a>
+            <a href="/" class="link-navbar">Home</a>
         </nav>
         
-        <header class="bg-center bg-cover bg-norepeat pt-60 pb-48 bg-neutral-800" style="background-image: url('/assets/images/banners/environment.webp');">
-            <h1 class="w-full text-center text-4xl md:text-6xl lg:text-8xl text-white extrabold">
+        <header class="header" style="background-image: url('/assets/images/banners/environment.webp');">
+            <h1 class="header-title">
                 Environment
             </h1>
-            <p class="text-center text-2xl md:text-4xl lg:text-6xl text-white extrabold">
-                Exploring the envrironmental impacts of the internet.
+            <p class="header-subtitle">
+                Exploring the environmental impacts of the internet.
             </p>
         </header>
         
-        <main class="px-8 md:px-16 lg:px-32 py-32 mx-auto text-xl md:text-2xl lg:text-3xl">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl">The internet's data centers alone have the same CO<sub>2</sub> footprint as the global air travel industry.</h2>
-            <p class="mt-4">
+        <main>
+            <h2>The internet's data centers alone have the same CO<sub>2</sub> footprint as the global air travel industry.</h2>
+            <p>
                 Every website we browse, video we watch, and email we send will probably pass through a data center. These giant warehouse-like buildings house hundreds of incredibly power hungry server computers.
                 These data centers use massive amounts of electricity, usually from fossil fuels which release a huge amount of CO<sub>2</sub> into the atmosphere.
                 The Internet will use a fifth of all the world’s electricity by 2025 and currently uses more electricity than the United Kingdom.
             </p>
-            <div class="bg-red-700 my-16 py-4 px-6 text-white">
+            <div class="alert-red">
                 The internet is responsible for roughly one billion tonnes of greenhouse gases a year, or around two per cent of world emissions.<br>
                 <span class="text-lg">Source: <a href="https://www.sciencefocus.com/science/what-is-the-carbon-footprint-of-the-internet/" target="_blank" class="underline">What is the carbon footprint of the internet?, BBC Science Focus, 2022 <i class="fa-solid fa-up-right-from-square text-sm" aria-hidden="true"></i></a>.</span>
             </div>
             
-            <hr class="w-1/2 mx-auto my-32">
+            <hr class="divider">
             
-            <h2 class="text-2xl md:text-3xl lg:text-4xl">Green web progress.</h2>
-            <p class="mt-4">
+            <h2>Green web progress.</h2>
+            <p>
                 We're continuing to push for a more green internet - where websites are hosted with renewable energy and offset the emissions of their visitors, and we've made some progress.
             </p>
-            <div class="bg-green-700 my-16 py-4 px-6 text-white">
+            <div class="alert-green">
                 Big brands such as Apple, Meta and Google already use 100% renewable energy.<br>
                 <span class="text-lg">Source: <a href="https://www.climatecare.org/resources/news/infographic-carbon-footprint-internet/" target="_blank" class="underline">ClimateCare <i class="fa-solid fa-up-right-from-square text-sm" aria-hidden="true"></i></a>.</span>
             </div>
             
-            <hr class="w-1/2 mx-auto my-32">
+            <hr class="divider">
             
-            <h2 class="text-2xl md:text-3xl lg:text-4xl">How much carbon does the internet release?</h2>
+            <h2>How much carbon does the internet release?</h2>
             <canvas id="internetCarbon" width="400" height="100"></canvas>
             
-            <hr class="w-1/2 mx-auto my-32">
+            <hr class="divider">
             
-            <h2 class="text-2xl md:text-3xl lg:text-4xl">How you can reduce your online carbon footprint.</h2>
-            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 mt-16">
-                <li class="rounded-lg shadow-lg transform duration-200">
-                    <div class="py-4 md:py-6 lg:py-8 px-2 md:px-3 lg:px-4">
-                        <i class="w-full text-center fa-solid fa-video text-2xl md:text-4xl lg:text-6xl" aria-hidden="true"></i>
-                        <h3 class="w-full text-center mt-4">Video Streaming</h3>
-                        <p class="w-full text-center mt-4 text-lg md:text-xl">Turn off auto-play and avoid using video if you only need audio.</p>
+            <h2>How you can reduce your online carbon footprint.</h2>
+            <ul class="grid-screen">
+                <li class="grid-item">
+                    <div class="grid-container">
+                        <i class="grid-icon" aria-hidden="true"></i>
+                        <h3 class="grid-text">Video Streaming</h3>
+                        <p class="grid-text-sm">Turn off autoplay and avoid using video if you only need audio.</p>
                     </div>
                 </li>
                 <li class="rounded-lg shadow-lg transform duration-200">
@@ -107,7 +107,7 @@
             <hr class="w-1/2 mx-auto my-32">
             
             <h2 class="text-2xl md:text-3xl lg:text-4xl">Cryptocurrency and NFTs.</h2>
-            <p class="mt-4">
+            <p>
                 Cryptocurrency mining is very energy intensive (it could be as much energy as the entire of Ireland uses) and has taken on industrial proportions in countries where there is cheap electricity and political favor.<br>
                 NFTs and coins have huge environmental impacts to our planet and release tonnes of CO<sub>2</sub> every year.
             </p>
@@ -119,10 +119,10 @@
                 A single NFT transaction on the Ethereum platform emits almost 150 kilograms of carbon dioxide, equivalent to 331,056 Visa transactions or 24,895 hours of watching YouTube. However, this may change soon.<br>
                 <span class="text-lg">Source: <a href="https://www.investopedia.com/nfts-and-the-environment-5220221" target="_blank" class="underline">NFTs and the Environment, Investopedia, 2022 <i class="fa-solid fa-up-right-from-square text-sm" aria-hidden="true"></i></a>.</span>
             </div>
-            <p class="mt-4">
+            <p>
                 Solana, Algorand, Cardano, and Tezos offer energy-efficient NFTs which heavily reduce the environmental impact of transactions.
             </p>
-            <p class="mt-4">
+            <p>
                 The Ethereum blockchain is about to become less of an energy hog thanks to a new "proof-of-stake" operating model.
                 The official switch to this new model is planned to take effect in the second quarter of 2022, according to ethereum.org<br>
                 Once the merge is complete, the expected energy consumption for a proof-of-stake Ethereum transaction should be the equivalent of 20 minutes of television.
@@ -132,14 +132,14 @@
             <hr class="w-1/2 mx-auto my-32">
             
             <h2 class="text-2xl md:text-3xl lg:text-4xl">Developers: How you can make your websites more green.</h2>
-            <p class="mt-4">
+            <p>
                 <strong>Reduce page size.</strong><br>
                 <span class="text-lg md:text-xl lg:text-2xl">
                     Minifying your code not only makes pages load faster, but it also saves on bandwidth, server power, and therefore electricity.
                     Use WEBP images instead of JPGs or PNGs and reduce the amount of video on your site. Don't autoplay videos.
                 </span>
             </p>
-            <p class="mt-4">
+            <p>
                 <strong>Switch to a green web host.</strong><br>
                 <span class="text-lg md:text-xl lg:text-2xl">
                     Green web hosts use renewable energy to host web pages. We even use one! You can find a list of green web hosts at the
