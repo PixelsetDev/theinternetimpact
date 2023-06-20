@@ -1001,7 +1001,7 @@ p {
 
 /* MAIN */
 
-.main-container {
+main {
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
@@ -1011,14 +1011,14 @@ p {
 }
 
 @media (min-width: 768px) {
-  .main-container {
+  main {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .main-container {
+  main {
     padding-left: 8rem;
     padding-right: 8rem;
   }
