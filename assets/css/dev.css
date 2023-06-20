@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3, h4, h5, h6, .extrabold { font-family: 'gilroyextrabold', sans-serif; }
-p, span, a, div, i, b, em, strong, .light { font-family: 'gilroylight', sans-serif; }
+/* FONTS */
+h1, h2, h3, h4, h5, h6, .extrabold { font-family: 'gilroyextrabold', sans-serif; @apply extrabold; }
+p, span, a, div, i, b, em, strong, .light { font-family: 'gilroylight', sans-serif; @apply text-xl md:text-2xl lg:text-3xl; }
 
 @font-face {
     font-family: 'gilroyextrabold';
@@ -11,11 +12,43 @@ p, span, a, div, i, b, em, strong, .light { font-family: 'gilroylight', sans-ser
     url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
 }
 
-
-
-
 @font-face {
     font-family: 'gilroylight';
     src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
     url('../fonts/gilroy-light-webfont.woff') format('woff');
 }
+
+/* HEADINGS */
+h2 { @apply text-4xl md:text-5xl lg:text-6xl; }
+h3 { @apply text-xl md:text-2xl lg:text-3xl; }
+.hm { @apply mt-16 mb-4; }
+
+/* NAVIGATION BAR */
+.navbar { @apply bg-neutral-900 py-2 px-16 w-full fixed top-0 z-30 flex; }
+.navbar-logo-container { @apply flex-grow; }
+.navbar-logo { @apply h-4 md:h-6 lg:h-8 mt-1; }
+
+/* HEADER */
+.header-full { @apply h-screen overflow-hidden absolute relative top-0 bg-center bg-cover bg-norepeat; }
+
+/* MAIN */
+.main-container { @apply px-8 md:px-16 lg:px-32 py-32 mx-auto; }
+
+/* ALERTS */
+.alert { @apply my-16 py-4 px-6 text-xl md:text-2xl lg:text-3xl; }
+.alert-red { @apply alert bg-red-700 text-white; }
+
+/* LINKS AND BUTTONS */
+.link-inline { @apply underline; }
+.link-navbar { @apply bg-neutral-800 text-white hover:bg-neutral-700 transform duration-200 px-2 py-1 rounded-lg self-center text-xs md:text-lg; }
+
+/* GRID */
+.grid-screen { @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 text-xl md:text-2xl lg:text-3xl mt-16; }
+.grid-item { @apply rounded-lg shadow-lg hover:shadow-xl transform duration-200; }
+.grid-text { @apply w-full text-center mt-4 extrabold; }
+.grid-icon { @apply w-full text-center text-2xl md:text-4xl lg:text-6xl; }
+.grid-comingsoon { @apply absolute top-0 right-0 px-1 text-lg bg-red-100 rounded-tr-lg rounded-bl-lg; }
+.grid-container { @apply py-4 md:py-6 lg:py-8; }
+
+/* OTHER */
+.divider { @apply w-1/2 mx-auto my-32; }
