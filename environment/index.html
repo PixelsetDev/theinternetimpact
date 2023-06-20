@@ -69,53 +69,53 @@
             <ul class="grid-screen">
                 <li class="grid-item">
                     <div class="grid-container">
-                        <i class="grid-icon" aria-hidden="true"></i>
+                        <i class="grid-icon fa-solid fa-video" aria-hidden="true"></i>
                         <h3 class="grid-text">Video Streaming</h3>
                         <p class="grid-text-sm">Turn off autoplay and avoid using video if you only need audio.</p>
                     </div>
                 </li>
-                <li class="rounded-lg shadow-lg transform duration-200">
-                    <div class="py-4 md:py-6 lg:py-8 px-2 md:px-3 lg:px-4">
-                        <i class="w-full text-center fa-solid fa-envelope text-2xl md:text-4xl lg:text-6xl" aria-hidden="true"></i>
-                        <h3 class="w-full text-center mt-4">Email</h3>
-                        <p class="w-full text-center mt-4 text-lg md:text-xl">Avoid using 'reply-all' when possible. Unsubscribe to email newsletters you no longer need. Try to talk in-person instead of online.</p>
+                <li class="grid-item">
+                    <div class="grid-container">
+                        <i class="grid-icon fa-solid fa-envelope" aria-hidden="true"></i>
+                        <h3 class="grid-text">Email</h3>
+                        <p class="grid-text-sm">Avoid using 'reply-all' when possible. Unsubscribe to email newsletters you no longer need. Try to talk in-person instead of online.</p>
                     </div>
                 </li>
-                <li class="rounded-lg shadow-lg transform duration-200">
-                    <div class="py-4 md:py-6 lg:py-8 px-2 md:px-3 lg:px-4">
-                        <i class="w-full text-center fa-solid fa-power-off text-2xl md:text-4xl lg:text-6xl" aria-hidden="true"></i>
-                        <h3 class="w-full text-center mt-4">Shut down</h3>
-                        <p class="w-full text-center mt-4 text-lg md:text-xl">Turn off your computer if you're not using it. Don't use sleep mode!</p>
+                <li class="grid-item">
+                    <div class="grid-container">
+                        <i class="grid-icon fa-solid fa-power-off" aria-hidden="true"></i>
+                        <h3 class="grid-text">Shut down</h3>
+                        <p class="grid-text-sm">Turn off your computer if you're not using it. Don't use sleep mode!</p>
                     </div>
                 </li>
-                <li class="rounded-lg shadow-lg transform duration-200">
-                    <div class="py-4 md:py-6 lg:py-8 px-2 md:px-3 lg:px-4">
-                        <i class="w-full text-center fa-solid fa-mobile text-2xl md:text-4xl lg:text-6xl" aria-hidden="true"></i>
-                        <h3 class="w-full text-center mt-4">Use a mobile device</h3>
-                        <p class="w-full text-center mt-4 text-lg md:text-xl">For quick searches or checking your emails, use your phone or a tablet.</p>
+                <li class="grid-item">
+                    <div class="grid-container">
+                        <i class="grid-icon fa-solid fa-mobile" aria-hidden="true"></i>
+                        <h3 class="grid-text">Use a mobile device</h3>
+                        <p class="grid-text-sm">For quick searches or checking your emails, use your phone or a tablet.</p>
                     </div>
                 </li>
-                <li class="rounded-lg shadow-lg transform duration-200">
-                    <div class="py-4 md:py-6 lg:py-8 px-2 md:px-3 lg:px-4">
-                        <i class="w-full text-center fa-brands fa-bitcoin text-2xl md:text-4xl lg:text-6xl" aria-hidden="true"></i>
-                        <h3 class="w-full text-center mt-4">Avoid non-green Crypto</h3>
-                        <p class="w-full text-center mt-4 text-lg md:text-xl">Cryptocurrency mining is very energy intensive (it could be as much energy as the entire of Ireland uses) and has a huge carbon footprint. Avoid cryptocurrency that isn't energy efficient and certified green.</p>
+                <li class="grid-item">
+                    <div class="grid-container">
+                        <i class="grid-icon fa-brands fa-bitcoin" aria-hidden="true"></i>
+                        <h3 class="grid-text">Avoid non-green Crypto</h3>
+                        <p class="grid-text-sm">Cryptocurrency mining is very energy intensive (it could be as much energy as the entire of Ireland uses) and has a huge carbon footprint. Avoid cryptocurrency that isn't energy efficient and certified green.</p>
                     </div>
                 </li>
             </ul>
             
-            <hr class="w-1/2 mx-auto my-32">
+            <hr class="divider">
             
-            <h2 class="text-2xl md:text-3xl lg:text-4xl">Cryptocurrency and NFTs.</h2>
+            <h2>Cryptocurrency and NFTs.</h2>
             <p>
                 Cryptocurrency mining is very energy intensive (it could be as much energy as the entire of Ireland uses) and has taken on industrial proportions in countries where there is cheap electricity and political favor.<br>
                 NFTs and coins have huge environmental impacts to our planet and release tonnes of CO<sub>2</sub> every year.
             </p>
-            <div class="bg-red-700 my-16 py-4 px-6 text-white">
+            <div class="alert-red">
                 Bitcoin released 114.06 Megatonnes CO<sub>2</sub> last year and releases 1170.91 kg CO<sub>2</sub> per transaction. That's equivalent to 2,595,147 VISA transactions or 195,152 hours of watching Youtube.<br>
                 <span class="text-lg">Source: <a href="https://digiconomist.net/bitcoin-energy-consumption" target="_blank" class="underline">Bitcoin Energy Consumption, Digiconomist, 2022 <i class="fa-solid fa-up-right-from-square text-sm" aria-hidden="true"></i></a>.</span>
             </div>
-            <div class="bg-red-700 my-16 py-4 px-6 text-white">
+            <div class="alert-red">
                 A single NFT transaction on the Ethereum platform emits almost 150 kilograms of carbon dioxide, equivalent to 331,056 Visa transactions or 24,895 hours of watching YouTube. However, this may change soon.<br>
                 <span class="text-lg">Source: <a href="https://www.investopedia.com/nfts-and-the-environment-5220221" target="_blank" class="underline">NFTs and the Environment, Investopedia, 2022 <i class="fa-solid fa-up-right-from-square text-sm" aria-hidden="true"></i></a>.</span>
             </div>
@@ -129,19 +129,19 @@
             </p>
             <canvas id="cryptoCarbon" width="400" height="100"></canvas>
             
-            <hr class="w-1/2 mx-auto my-32">
+            <hr class="divider">
             
-            <h2 class="text-2xl md:text-3xl lg:text-4xl">Developers: How you can make your websites more green.</h2>
+            <h2>Developers: How you can make your websites more green.</h2>
             <p>
                 <strong>Reduce page size.</strong><br>
-                <span class="text-lg md:text-xl lg:text-2xl">
+                <span class="text-small">
                     Minifying your code not only makes pages load faster, but it also saves on bandwidth, server power, and therefore electricity.
                     Use WEBP images instead of JPGs or PNGs and reduce the amount of video on your site. Don't autoplay videos.
                 </span>
             </p>
             <p>
                 <strong>Switch to a green web host.</strong><br>
-                <span class="text-lg md:text-xl lg:text-2xl">
+                <span class="text-small">
                     Green web hosts use renewable energy to host web pages. We even use one! You can find a list of green web hosts at the
                     <a href="https://www.thegreenwebfoundation.org/directory/" target="_blank" class="underline">Green Web Foundation's Hosting Directory
                     <i class="fa-solid fa-up-right-from-square text-sm" aria-hidden="true"></i></a>
