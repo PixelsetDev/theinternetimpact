@@ -4,7 +4,8 @@
 
 /* FONTS */
 h1, h2, h3, h4, h5, h6, .extrabold { font-family: 'gilroyextrabold', sans-serif; }
-p, span, a, div, i, b, em, strong, .light { font-family: 'gilroylight', sans-serif; @apply text-xl md:text-2xl lg:text-3xl; }
+p, span, div, i, b, em, strong, .light { font-family: 'gilroylight', sans-serif; @apply text-xl md:text-2xl lg:text-3xl; }
+a { font-family: 'gilroylight', sans-serif; }
 
 @font-face {
     font-family: 'gilroyextrabold';
@@ -56,7 +57,8 @@ footer { @apply bg-neutral-900 py-2 px-16 w-full text-white; }
 
 /* GRID */
 .grid-screen { @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 text-xl md:text-2xl lg:text-3xl mt-16; }
-.grid-item { @apply rounded-lg shadow-lg hover:shadow-xl bg-neutral-100 hover:bg-white transform duration-200; }
+.grid-item { @apply rounded-lg shadow-lg transform duration-200 p-1; }
+.grid-item-link { @apply grid-item hover:bg-neutral-50 hover:shadow-xl; }
 .grid-text { @apply w-full text-center mt-4 extrabold; }
 .grid-text-sm { @apply w-full text-center mt-4 text-lg md:text-xl; }
 .grid-icon { @apply w-full text-center text-2xl md:text-4xl lg:text-6xl; }
