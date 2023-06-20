@@ -62,34 +62,6 @@
             
             <h2 class="text-2xl md:text-3xl lg:text-4xl">How much carbon does the internet release?</h2>
             <canvas id="internetCarbon" width="400" height="100"></canvas>
-            <script>
-            const ctx = document.getElementById('internetCarbon').getContext('2d');
-            const internetCarbon = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Google Search (0.2g / search)', 'Email (4g / message)', 'Email with Images (50g / message)', 'Netflix (55g / hour)', 'TikTok (12g / hour)'],
-                    datasets: [{
-                        label: 'Grams of CO2',
-                        data: [0.2, 4, 50, 55, 12],
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ]
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-            </script>
             
             <hr class="w-1/2 mx-auto my-32">
             
@@ -156,34 +128,6 @@
                 Once the merge is complete, the expected energy consumption for a proof-of-stake Ethereum transaction should be the equivalent of 20 minutes of television.
             </p>
             <canvas id="cryptoCarbon" width="400" height="100"></canvas>
-            <script>
-            const ccx = document.getElementById('cryptoCarbon').getContext('2d');
-            const cryptoCarbon = new Chart(ccx, {
-                type: 'bar',
-                data: {
-                    labels: ['Bitcoin (1170kg)', 'Ethereum (Pre-POS) (150kg)', 'Dogecoin (282kg)', 'Ripple / XRPL (0.01kg)'],
-                    datasets: [{
-                        label: 'Kilograms of CO2 per single transaction',
-                        data: [1170, 150, 282, 0.01],
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ]
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-            </script>
             
             <hr class="w-1/2 mx-auto my-32">
             
@@ -210,5 +154,61 @@
         <script src="/assets/js/scroll.js" defer></script>
         <script src="/assets/js/chart.min.js" defer></script>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3409755241627025" crossorigin="anonymous"></script>
+
+        <script>
+            const ctx = document.getElementById('internetCarbon').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Google Search (0.2g / search)', 'Email (4g / message)', 'Email with Images (50g / message)', 'Netflix (55g / hour)', 'TikTok (12g / hour)'],
+                    datasets: [{
+                        label: 'Grams of CO2',
+                        data: [0.2, 4, 50, 55, 12],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ]
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            const ccx = document.getElementById('cryptoCarbon').getContext('2d');
+            new Chart(ccx, {
+                type: 'bar',
+                data: {
+                    labels: ['Bitcoin (1170kg)', 'Ethereum (Pre-POS) (150kg)', 'Dogecoin (282kg)', 'Ripple / XRPL (0.01kg)'],
+                    datasets: [{
+                        label: 'Kilograms of CO2 per single transaction',
+                        data: [1170, 150, 282, 0.01],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ]
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
     </body>
 </html>
