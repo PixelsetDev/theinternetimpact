@@ -1,0 +1,8 @@
+[04-Aug-2022 12:41:30 Europe/London] PHP Fatal error:  Uncaught Error: Failed opening required '/home/lmwncouk/public_sites/theinternetimpact/theinternetimpact.org/mental-health/charities/../common/vendors.inc' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/lmwncouk/public_sites/theinternetimpact/theinternetimpact.org/mental-health/charities/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/lmwncouk/public_sites/theinternetimpact/theinternetimpact.org/mental-health/charities/index.php on line 4
+[04-Aug-2022 12:41:40 Europe/London] PHP Fatal error:  Uncaught Error: Failed opening required '/home/lmwncouk/public_sites/theinternetimpact/theinternetimpact.org/mental-health/charities/../../../common/vendors.inc' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/lmwncouk/public_sites/theinternetimpact/theinternetimpact.org/mental-health/charities/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/lmwncouk/public_sites/theinternetimpact/theinternetimpact.org/mental-health/charities/index.php on line 4
