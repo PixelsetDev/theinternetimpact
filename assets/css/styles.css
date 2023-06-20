@@ -739,6 +739,8 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .header {
@@ -747,6 +749,8 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   padding-top: 15rem;
   padding-bottom: 12rem;
 }
