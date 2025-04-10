@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border-t-std { @apply border-t-4; }
+
+body { @apply dark:bg-neutral-900 dark:text-white; }
+main { @apply py-2 md:py-4 grid gap-std; }
+.section { @apply px-4 py-4 md:px-6 md:py-10 lg:py-16 grid gap-std; }
+section { @apply section; }
+section.alt { @apply section bg-neutral-900 dark:bg-neutral-800 text-white; }
+nav { @apply px-3 md:px-6 py-1 fixed top-0 left-0 right-0 bg-black text-white z-20; }
+footer { @apply px-3 py-2 md:px-6 md:py-4 bg-black text-white }
+
+.grid-1 { @apply grid; }
+.grid-2-1 { @apply grid md:grid-cols-2; }
+.grid-2 { @apply grid grid-cols-2; }
+.grid-3 { @apply grid grid-cols-2 md:grid-cols-3; }
+.grid-4 { @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4; }
+
+.gap-std { @apply gap-2 sm:gap-4 md:gap-6 lg:gap-8; }
+.space-x-std { @apply space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8; }
+.space-y-std { @apply space-y-2 sm:space-y-4 md:space-y-6 lg:space-y-8; }
+
+.btn { @apply px-3 py-2 md:px-6 md:py-4 lg:px-8 cursor-pointer border-b-4 hover:border-b-0 hover:border-t-4 hover:border-white dark:hover:border-neutral-900; }
+
+.btn-primary { @apply btn bg-neutral-200 hover:bg-neutral-100 border-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:border-neutral-700; }
+.btn-danger { @apply btn bg-red-400 hover:bg-red-300 border-red-300 dark:bg-red-700 dark:hover:bg-red-600 dark:border-red-500; }
+.btn-warning { @apply btn bg-yellow-400 hover:bg-yellow-300 border-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-500 dark:border-yellow-400; }
+.btn-success { @apply btn bg-green-400 hover:bg-green-300 border-green-300 dark:bg-green-700 dark:hover:bg-green-600 dark:border-green-500; }
+.btn-info { @apply btn bg-blue-400 hover:bg-blue-300 border-blue-300 dark:bg-blue-700 dark:hover:bg-blue-600 dark:border-blue-500; }
+
+.btn-grid { @apply btn-primary text-center grid gap-std; }
+.btn-nav { @apply hover:underline transition duration-200; }
+.btn-tab { @apply px-3 py-2 md:px-6 md:py-4 lg:px-8 cursor-pointer border-b-4 hover:border-b-0 hover:border-t-4 hover:border-white dark:hover:border-neutral-900 bg-neutral-200 hover:bg-neutral-100 border-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:border-neutral-700; }
+.btn-tab-active { @apply px-3 py-2 md:px-6 md:py-4 lg:px-8 cursor-pointer border-b-0 border-t-4 border-white dark:border-neutral-900 bg-neutral-100 dark:bg-neutral-700; }
+
+.link-inline { @apply underline; }
+
+.my { @apply my-6 md:my-8 lg:my-12 xl:my-16; }
+.mys { @apply my-3 md:my-4 lg:my-6 xl:my-8; }
+
+.card { @apply px-3 py-2 md:px-6 md:py-4 lg:px-8 lg:py-6 bg-neutral-100 dark:bg-black border-t-std; }
+.card-red { @apply card border-red-500; }
+.card-green { @apply card border-green-500; }
+.card-yellow { @apply card border-yellow-400; }
+.card-blue { @apply card border-blue-500; }
+
+.card-alt { @apply px-3 py-2 md:px-6 md:py-4 lg:px-8 lg:py-6 bg-black border-t-std; }
+.card-alt-red { @apply card-alt border-red-500; }
+.card-alt-green { @apply card-alt border-green-500; }
+.card-alt-yellow { @apply card-alt border-yellow-400; }
+.card-alt-blue { @apply card-alt border-blue-500; }
+
+.txt-8xl, h1 { @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl; }
+.txt-7xl { @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl; }
+.txt-6xl, h2 { @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl; }
+.txt-4xl, h3 { @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl; }
+.txt-3xl, h4, body { @apply sm:text-lg md:text-xl lg:text-2xl xl:text-3xl; }
+.txt-2xl { @apply text-sm md:text-lg lg:text-xl xl:text-2xl; }
+.txt-xl { @apply text-sm lg:text-lg xl:text-xl; }
+.txt-logo { @apply text-3xl; }
+
+.txt-extrabold { font-family: "Lexend", sans-serif; font-optical-sizing: auto; font-weight: 700; font-style: normal; }
+.txt-bold, h1, h2, h3, h4, h5, h6, strong, b { font-family: "Lexend", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; }
+.txt-semibold { font-family: "Lexend", sans-serif; font-optical-sizing: auto; font-weight: 500; font-style: normal; }
+body { font-family: "Lexend", sans-serif; font-optical-sizing: auto; font-weight: 400; font-style: normal; }
+.txt-light { font-family: "Lexend", sans-serif; font-optical-sizing: auto; font-weight: 300; font-style: normal; }
+.txt-extralight { font-family: "Lexend", sans-serif; font-optical-sizing: auto; font-weight: 200; font-style: normal; }
+
+.source { @apply txt-xl; }
+.source > a { @apply underline; }
+
+code { @apply bg-neutral-200 dark:bg-neutral-800 px-2 py-1 txt-xl; }
+.code-good { @apply bg-green-200 dark:bg-green-900 px-2 py-1; }
+
+hr { @apply w-1/2 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700; }
+
+.masonry { @apply grid-2-1 gap-std }
+.masonry-col { @apply flex flex-col space-y-std }

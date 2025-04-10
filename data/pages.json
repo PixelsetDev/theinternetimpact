@@ -1,0 +1,121 @@
+{
+  "topics": [
+    {
+      "slug": "accessibility",
+      "aliases": [],
+      "title": "Accessibility",
+      "subtitle": "Everyone deserves easy access to the internet.",
+      "icon": "fa-solid fa-universal-access",
+      "authors": ["Lewis"],
+      "status": 1
+    },
+    {
+      "slug": "education",
+      "aliases": [],
+      "title": "Education",
+      "subtitle": "Teaching new generations.",
+      "icon": "fa-solid fa-user-graduate",
+      "authors": ["Lewis"],
+      "status": 0
+    },
+    {
+      "slug": "energy",
+      "aliases": [],
+      "title": "Energy",
+      "subtitle": "It powers our homes, and the internet too.",
+      "icon": "fa-solid fa-bolt",
+      "authors": ["Lewis"],
+      "status": 1
+    },
+    {
+      "slug": "environment",
+      "aliases": [],
+      "title": "Environment",
+      "subtitle": "Saving our planet.",
+      "icon": "fa-solid fa-tree",
+      "authors": ["Lewis"],
+      "status": 1
+    },
+    {
+      "slug": "mental-health",
+      "aliases": ["wellbeing"],
+      "title": "Mental Health",
+      "subtitle": "The internet has changed Mental Health.",
+      "icon": "fa-solid fa-brain",
+      "authors": ["Lewis"],
+      "status": 1
+    },
+    {
+      "slug": "mental-health/support",
+      "aliases": ["wellbeing/support"],
+      "title": "Mental Health Support",
+      "subtitle": "Please reach out if you need help.",
+      "icon": "fa-solid fa-brain",
+      "authors": ["Lewis"],
+      "status": -1
+    },
+    {
+      "slug": "privacy",
+      "aliases": [],
+      "title": "Privacy",
+      "subtitle": "We all deserve it.",
+      "icon": "fa-solid fa-eye-slash",
+      "authors": ["Lewis"],
+      "status": 0
+    },
+    {
+      "slug": "safety",
+      "aliases": [],
+      "title": "Online Safety",
+      "subtitle": "Keeping ourselves safe online",
+      "icon": "fa-solid fa-shield",
+      "authors": ["Lewis"],
+      "status": 0
+    },
+    {
+      "slug": "security",
+      "aliases": ["cyber-security"],
+      "title": "Security",
+      "subtitle": "Keeping ourselves safe online",
+      "icon": "fa-solid fa-lock",
+      "authors": ["Lewis"],
+      "status": 0
+    },
+    {
+      "slug": "artificial-intelligence",
+      "aliases": ["ai","chatgpt","llms"],
+      "title": "Artificial Intelligence",
+      "subtitle": "A new frontier of computer use.",
+      "icon": "fa-solid fa-hexagon-nodes",
+      "authors": ["Lewis"],
+      "status": 1
+    },
+    {
+      "slug": "cryptocurrency",
+      "aliases": ["crypto", "nfts"],
+      "title": "Cryptocurrency & NFTs",
+      "subtitle": "Decentralised payment systems.",
+      "icon": "fa-solid fa-bitcoin-sign",
+      "authors": ["Lewis"],
+      "status": 1
+    },
+    {
+      "slug": "social-media",
+      "aliases": [],
+      "title": "Social Media",
+      "subtitle": "Websites for connections.",
+      "icon": "fa-solid fa-thumbs-up",
+      "authors": ["Lewis"],
+      "status": 1
+    },
+    {
+      "slug": "streaming",
+      "aliases": [],
+      "title": "Streaming",
+      "subtitle": "Movies and TV shows on demand.",
+      "icon": "fa-solid fa-video",
+      "authors": ["Lewis"],
+      "status": 0
+    }
+  ]
+}
